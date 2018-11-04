@@ -1,3 +1,5 @@
+Java branch can be found [here](https://github.com/midaslefkowitz/FluidKeyboardResize/tree/java).
+
 ![Fluid resize](https://github.com/saket/FluidResize/blob/master/images/fluid_resize.gif)
 
 Sample project for my blog post, [Smoothly reacting to keyboard visibility changes](https://saket.me/smoothly-reacting-to-keyboard/).
