@@ -18,7 +18,10 @@ public final class FluidContentResizer {
 
         KeyboardVisibilityDetector.listen(viewHolder, visibilityChangedEvent -> animateHeight(viewHolder, visibilityChangedEvent));
 
-        viewHolder.onDetach(() -> heightAnimator.cancel());
+        viewHolder.onDetach(() -> {
+            heightAnimator.cancel();
+            heightAnimator.removeAllUpdateListeners();
+        });
     }
 
     private void animateHeight(ActivityViewHolder viewHolder, KeyboardVisibilityChangedListener.KeyboardVisibilityChangedEvent event) {
